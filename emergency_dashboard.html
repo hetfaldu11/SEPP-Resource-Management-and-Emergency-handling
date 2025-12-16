@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emergency Department Dashboard (Prototype)</title>
+    <link rel="stylesheet" href="css/citizen.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Emergency Department Dashboard</h2>
+
+    <!-- OFFICER PROFILE -->
+    <div class="section">
+        <h3>Officer Profile</h3>
+        <p><b>Name:</b> Rahul Verma</p>
+        <p><b>Department:</b> Emergency Response</p>
+        <p><b>Zone:</b> City-Wide Control</p>
+        <button>Update Profile</button>
+    </div>
+
+    <!-- ACTIVE EMERGENCIES PRIORITY WISE -->
+    <div class="section">
+        <h3>Active Emergencies (Priority Wise)</h3>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Priority</th>
+                <th>Actions</th>
+            </tr>
+
+            <tr>
+                <td>EMR-4501</td>
+                <td>Fire</td>
+                <td>Fire in building Sector 10</td>
+                <td class="high">High</td>
+                <td>
+                    <button>Assign Vehicles</button>
+                    <button>Update Status</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>EMR-4478</td>
+                <td>Medical</td>
+                <td>Accident near City Mall</td>
+                <td class="medium">Medium</td>
+                <td>
+                    <button>Assign Vehicles</button>
+                    <button>Update Status</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>EMR-4441</td>
+                <td>Crime</td>
+                <td>Snatching incident reported</td>
+                <td class="low">Low</td>
+                <td>
+                    <button>Assign Vehicles</button>
+                    <button>Update Status</button>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+    <!-- ASSIGN FREE VEHICLES/WORKERS -->
+    <div class="section">
+        <h3>Assign Vehicle / Workers (Free Units Only)</h3>
+
+        <label>Select Available Vehicle</label>
+        <select>
+            <option>Ambulance A-12</option>
+            <option>Fire Truck F-04</option>
+            <option>Police Van P-07</option>
+        </select>
+
+        <label>Select Available Worker</label>
+        <select>
+            <option>Ramesh - Fire Team</option>
+            <option>Karan - Medical Assistant</option>
+            <option>Vijay - Police Officer</option>
+        </select>
+
+        <button>Assign Team</button>
+    </div>
+
+    <!-- UPDATE EMERGENCY STATUS -->
+    <div class="section">
+        <h3>Update Emergency Status</h3>
+
+        <label>Select Emergency ID</label>
+        <select>
+            <option>EMR-4501</option>
+            <option>EMR-4478</option>
+            <option>EMR-4441</option>
+        </select>
+
+        <label>Status</label>
+        <select>
+            <option>Pending</option>
+            <option>Dispatched</option>
+            <option>Reached</option>
+            <option>In-Progress</option>
+            <option>Completed</option>
+        </select>
+
+        <button>Update Status</button>
+    </div>
+
+    <!-- TRACK EMERGENCY VEHICLES -->
+    <div class="section">
+        <h3>Track Emergency Vehicle</h3>
+
+        <p><b>Emergency ID:</b> EMR-4501</p>
+        <p><b>Assigned Vehicle:</b> Fire Truck F-04</p>
+        <p><b>Status:</b> En route (ETA: 5 minutes)</p>
+
+        <button>Open Live Map</button>
+    </div>
+
+    <!-- PAST EMERGENCY HISTORY -->
+    <div class="section">
+        <h3>Past Emergency Records</h3>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Date</th>
+            </tr>
+
+            <tr>
+                <td>EMR-4302</td>
+                <td>Medical</td>
+                <td>Completed</td>
+                <td>10/12/2025</td>
+            </tr>
+
+            <tr>
+                <td>EMR-4231</td>
+                <td>Fire</td>
+                <td>Completed</td>
+                <td>05/12/2025</td>
+            </tr>
+
+            <tr>
+                <td>EMR-4198</td>
+                <td>Crime</td>
+                <td>Completed</td>
+                <td>27/11/2025</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <!-- UPDATE WORKER FAULT COUNT -->
+    <div class="section">
+        <h3>Update Worker Fault Count</h3>
+
+        <label>Select Worker</label>
+        <select>
+            <option>Ramesh (Fire)</option>
+            <option>Karan (Medical)</option>
+            <option>Vijay (Police)</option>
+        </select>
+
+        <label>Fault Description</label>
+        <textarea placeholder="Describe the fault..."></textarea>
+
+        <button>Update Fault Count</button>
+    </div>
+
+</div>
+
+</body>
+</html>

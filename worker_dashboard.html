@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Worker Dashboard (Prototype)</title>
+    <link rel="stylesheet" href="css/worker.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Worker Dashboard</h2>
+
+    <!-- WORKER BASIC INFO -->
+    <div class="section">
+        <h3>Worker Profile</h3>
+
+        <p><b>Name:</b> John Doe</p>
+        <p><b>Role:</b> Fire Response Worker</p>
+        <p><b>Experience:</b> 3 Years</p>
+        <p><b>Fault Count:</b> 2</p>
+
+        <button>Update Profile</button>
+    </div>
+
+    <!-- CURRENT ASSIGNED TASK -->
+    <div class="section">
+        <h3>Current Assigned Task</h3>
+
+        <p><b>Task ID:</b> TSK-2045</p>
+        <p><b>Task Type:</b> Fire Emergency</p>
+        <p><b>Location:</b> Sector 12, Near City Mall</p>
+        <p><b>Description:</b> Building ground floor fire reported</p>
+
+        <button>View Task Info</button>
+        <button>Get Optimal Route</button>
+
+        <label>Update Task Status</label>
+        <select>
+            <option>Pending</option>
+            <option>Reached</option>
+            <option>In-Progress</option>
+            <option>Completed</option>
+        </select>
+
+        <button>Submit Task Update</button>
+        <button style="background:#d9534f;">Request More Workers</button>
+    </div>
+
+    <!-- SUBMIT REPORT -->
+    <div class="section">
+        <h3>Submit Task Report</h3>
+        <textarea placeholder="Write what work you completed..."></textarea>
+        <button>Submit Report</button>
+    </div>
+
+    <!-- PAST TASKS -->
+    <div class="section">
+        <h3>Past Task History</h3>
+
+        <table>
+            <tr>
+                <th>Task ID</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Date</th>
+            </tr>
+
+            <tr>
+                <td>TSK-1972</td>
+                <td>Garbage Pickup</td>
+                <td>Completed</td>
+                <td>12/11/2025</td>
+            </tr>
+
+            <tr>
+                <td>TSK-1887</td>
+                <td>Ambulance Support</td>
+                <td>Completed</td>
+                <td>07/10/2025</td>
+            </tr>
+
+            <tr>
+                <td>TSK-1765</td>
+                <td>Fire Rescue</td>
+                <td>Completed</td>
+                <td>20/09/2025</td>
+            </tr>
+
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>

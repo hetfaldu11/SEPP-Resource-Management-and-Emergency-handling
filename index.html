@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart City Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="login-box">
+    <h2>Smart City Login Portal</h2>
+
+    <form action="login.php" method="POST">
+
+        <label>User Type</label>
+        <select name="userType" required>
+            <option value="government">Government Authority</option>
+            <option value="emergency">Emergency Department</option>
+            <option value="utility">Utility Officer</option>
+            <option value="worker">Worker / Field Team</option>
+            <option value="citizen">Citizen</option>
+        </select>
+
+        <label>Unique Code</label>
+        <input type="text" name="username" required>
+
+        <label>Password</label>
+        <input type="password" name="password" required>
+
+        <button type="submit" name="login">Login</button>
+
+        <p>Citizen First Time? <a href="signup.html">Sign Up With DigiLocker</a></p>
+
+    </form>
+</div>
+</body>
+</html>

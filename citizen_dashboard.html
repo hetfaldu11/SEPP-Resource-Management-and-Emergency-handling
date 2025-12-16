@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Citizen Dashboard (Prototype)</title>
+    <link rel="stylesheet" href="css/citizen.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Citizen Dashboard</h2>
+
+    <!-- CITIZEN BASIC INFO -->
+    <div class="section">
+        <h3>Welcome, Citizen</h3>
+        <p><b>Name:</b> Rohan Sharma</p>
+        <p><b>Zone:</b> Sector 14</p>
+        <p><b>Unique Code:</b> CIT-56291</p>
+    </div>
+
+    <!-- SUBMIT COMPLAINT -->
+    <div class="section">
+        <h3>Submit a Complaint</h3>
+
+        <label>Department</label>
+        <select>
+            <option>Electricity</option>
+            <option>Water Supply</option>
+            <option>Street Light</option>
+            <option>Garbage</option>
+            <option>Parking</option>
+        </select>
+
+        <label>Description</label>
+        <textarea placeholder="Explain your issue..."></textarea>
+
+        <button>Submit Complaint</button>
+    </div>
+
+    <!-- UTILITY USAGE -->
+    <div class="section">
+        <h3>Utility Usage in Your Area</h3>
+
+        <p><b>Water Usage:</b> 72% of daily quota</p>
+        <p><b>Electricity Usage:</b> 65% consumption today</p>
+        <p><b>Parking Availability:</b> Medium</p>
+
+        <button>View Detailed Utility Report</button>
+    </div>
+
+    <!-- REPORT EMERGENCY -->
+    <div class="section">
+        <h3>Report an Emergency</h3>
+
+        <label>Select Emergency Type</label>
+        <select>
+            <option>Medical Emergency</option>
+            <option>Fire</option>
+            <option>Crime / Theft</option>
+            <option>Accident</option>
+        </select>
+
+        <label>Description</label>
+        <textarea placeholder="Describe the emergency..."></textarea>
+
+        <button style="background:#d9534f;">Report Emergency</button>
+    </div>
+
+    <!-- TRACK EMERGENCY VEHICLE -->
+    <div class="section">
+        <h3>Track Emergency Vehicle</h3>
+
+        <p><b>Latest Emergency ID:</b> EMR-2041</p>
+        <p><b>Assigned Vehicle:</b> Ambulance A-12</p>
+        <p><b>Status:</b> En route (ETA: 6 minutes)</p>
+
+        <button>Open Live Map</button>
+    </div>
+
+    <!-- COMPLAINT HISTORY -->
+    <div class="section">
+        <h3>Your Complaint History</h3>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Department</th>
+                <th>Status</th>
+                <th>Date</th>
+            </tr>
+
+            <tr>
+                <td>CMP-1123</td>
+                <td>Water Supply</td>
+                <td>Resolved</td>
+                <td>10/12/2025</td>
+            </tr>
+
+            <tr>
+                <td>CMP-1098</td>
+                <td>Electricity</td>
+                <td>In-Progress</td>
+                <td>05/12/2025</td>
+            </tr>
+
+            <tr>
+                <td>CMP-1056</td>
+                <td>Garbage</td>
+                <td>Resolved</td>
+                <td>28/11/2025</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

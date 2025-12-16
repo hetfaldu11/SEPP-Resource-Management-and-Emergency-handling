@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Utility Department Dashboard (Prototype)</title>
+    <link rel="stylesheet" href="css/utility.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Utility Management Department</h2>
+
+    <!-- OFFICER PROFILE -->
+    <div class="section">
+        <h3>Officer Profile</h3>
+        <p><b>Name:</b> Priya Mehta</p>
+        <p><b>Zone:</b> Sector 8</p>
+        <button>Update Profile</button>
+    </div>
+
+    <!-- PENDING TASKS PRIORITY WISE -->
+    <div class="section">
+        <h3>Pending Tasks (Priority Wise)</h3>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Department</th>
+                <th>Description</th>
+                <th>Priority</th>
+                <th>Actions</th>
+            </tr>
+
+            <tr>
+                <td>UTL-3021</td>
+                <td>Electricity</td>
+                <td>Main transformer overloaded</td>
+                <td class="high">High</td>
+                <td>
+                    <button>Assign Workers</button>
+                    <button>Update Status</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>UTL-2978</td>
+                <td>Water Supply</td>
+                <td>Pipeline leakage in Sector 7</td>
+                <td class="medium">Medium</td>
+                <td>
+                    <button>Assign Workers</button>
+                    <button>Update Status</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>UTL-2912</td>
+                <td>Street Lights</td>
+                <td>15 lights not working in Sector 5</td>
+                <td class="low">Low</td>
+                <td>
+                    <button>Assign Workers</button>
+                    <button>Update Status</button>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+
+    <!-- ASSIGN FREE WORKERS -->
+    <div class="section">
+        <h3>Assign Team (Free Workers Only)</h3>
+
+        <label>Select Free Worker</label>
+        <select>
+            <option>Ravi Kumar - Electrician</option>
+            <option>Sunil Verma - Plumber</option>
+            <option>Amit Shah - Street Light Technician</option>
+        </select>
+
+        <button>Assign Worker</button>
+    </div>
+
+
+    <!-- UPDATE WORKER FAULT COUNT -->
+    <div class="section">
+        <h3>Update Worker Fault Count</h3>
+
+        <label>Select Worker</label>
+        <select>
+            <option>Ravi Kumar</option>
+            <option>Sunil Verma</option>
+            <option>Amit Shah</option>
+        </select>
+
+        <label>Fault Reason</label>
+        <textarea placeholder="Describe the fault..."></textarea>
+
+        <button>Update Fault Count</button>
+    </div>
+
+
+    <!-- MAINTAIN UTILITIES -->
+    <div class="section">
+        <h3>Maintain Utilities</h3>
+
+        <p><b>Electricity Load:</b> 78% (Stable)</p>
+        <p><b>Water Usage:</b> 64% (Normal)</p>
+        <p><b>Street Lights Active:</b> 92%</p>
+        <p><b>Parking Occupancy:</b> Moderate</p>
+
+        <button>Manage Electricity Grid</button>
+        <button>Manage Water Supply</button>
+        <button>Manage Street Lights</button>
+        <button>Manage Parking System</button>
+    </div>
+
+
+    <!-- PAST COMPLAINT HISTORY -->
+    <div class="section">
+        <h3>Past Complaint Records</h3>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Department</th>
+                <th>Status</th>
+                <th>Date</th>
+            </tr>
+
+            <tr>
+                <td>UTL-2789</td>
+                <td>Electricity</td>
+                <td>Resolved</td>
+                <td>12/12/2025</td>
+            </tr>
+
+            <tr>
+                <td>UTL-2704</td>
+                <td>Water Supply</td>
+                <td>Resolved</td>
+                <td>05/12/2025</td>
+            </tr>
+
+            <tr>
+                <td>UTL-2607</td>
+                <td>Street Lights</td>
+                <td>Resolved</td>
+                <td>30/11/2025</td>
+            </tr>
+
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>
