@@ -2,35 +2,46 @@
 <html>
 <head>
     <title>Smart City Login</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
+
 <div class="login-box">
     <h2>Smart City Login Portal</h2>
 
-    <form action="login.php" method="POST">
+    <label>User Type</label>
+    <select id="role">
+        <option value="government">Government Authority</option>
+        <option value="emergency">Emergency Department</option>
+        <option value="utility">Utility Officer</option>
+        <option value="worker">Worker / Field Team</option>
+        <option value="citizen">Citizen</option>
+    </select>
 
-        <label>User Type</label>
-        <select name="userType" required>
-            <option value="government">Government Authority</option>
-            <option value="emergency">Emergency Department</option>
-            <option value="utility">Utility Officer</option>
-            <option value="worker">Worker / Field Team</option>
-            <option value="citizen">Citizen</option>
-        </select>
+    <label>Unique Code</label>
+    <input type="text">
 
-        <label>Unique Code</label>
-        <input type="text" name="username" required>
+    <label>Password</label>
+    <input type="password">
 
-        <label>Password</label>
-        <input type="password" name="password" required>
+    <button onclick="login()">Login</button>
 
-        <button type="submit" name="login">Login</button>
-
-        <p>Citizen First Time? <a href="signup.html">Sign Up With DigiLocker</a></p>
-
-    </form>
+    <p style="margin-top:12px;text-align:center">
+        Citizen First Time?
+        <a href="signup.html">Sign Up With DigiLocker</a>
+    </p>
 </div>
+
+<script>
+function login() {
+    const role = document.getElementById("role").value;
+    if (role === "citizen") window.location.href = "citizen_dashboard.html";
+    else if (role === "emergency") window.location.href = "emergency_dashboard.html";
+    else if (role === "utility") window.location.href = "utility_dashboard.html";
+    else if (role === "worker") window.location.href = "worker_dashboard.html";
+    else window.location.href = "government_dashboard.html";
+}
+</script>
+
 </body>
 </html>

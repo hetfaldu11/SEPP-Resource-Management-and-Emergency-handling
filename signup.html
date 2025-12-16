@@ -2,35 +2,33 @@
 <html>
 <head>
     <title>Citizen Signup</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
+
 <div class="login-box">
     <h2>Citizen Signup (DigiLocker)</h2>
 
-    <form action="signup.php" method="POST">
+    <label>Full Name</label>
+    <input type="text">
 
-        <label>Full Name</label>
-        <input type="text" name="name" required>
+    <label>Email</label>
+    <input type="email">
 
-        <label>Email</label>
-        <input type="email" name="email" required>
+    <label>Phone Number</label>
+    <input type="text">
 
-        <label>Phone Number</label>
-        <input type="text" name="phone" required>
+    <button>Connect DigiLocker</button>
+    <br>
 
-        <button type="button">Connect DigiLocker</button>
+    <label>Create Password</label>
+    <input type="password">
 
-        <label>Create Password</label>
-        <input type="password" name="password" required>
+    <label>Confirm Password</label>
+    <input type="password">
 
-        <label>Confirm Password</label>
-        <input type="password" name="password" required>
-
-        <button type="submit" name="signup">Sign Up</button>
-
-    </form>
+    <button onclick="location.href='index.html'">Sign Up</button>
 </div>
+
 </body>
 </html>

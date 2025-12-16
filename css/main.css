@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #e0eafc, #cfdef3);
+}
+
+/* NAVBAR */
+.navbar {
+    background: #1f3c88;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    background: #d9534f;
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* HEADINGS */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1f3c88;
+}
+
+/* SECTIONS */
+.section {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f7f9fc;
+    border-left: 6px solid #1f3c88;
+    border-radius: 8px;
+}
+
+/* INPUTS */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 80px;
+}
+
+/* BUTTONS */
+button {
+    padding: 10px 16px;
+    background: #1f3c88;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #142a5e;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    margin-top: 12px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #1f3c88;
+    color: white;
+}
+
+/* PRIORITY */
+.high { color: red; font-weight: bold; }
+.medium { color: orange; font-weight: bold; }
+.low { color: green; font-weight: bold; }
+
+/* LOGIN */
+.login-box {
+    width: 380px;
+    margin: 90px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}

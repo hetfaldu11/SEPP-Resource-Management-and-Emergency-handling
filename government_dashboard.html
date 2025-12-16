@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Government Authority Dashboard</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- TOP NAVBAR -->
+<div class="navbar">
+    <h3>Smart City – Government Authority</h3>
+    <a href="index.html">Logout</a>
+</div>
+
+<div class="container">
+
+    <h2>Government Authority Dashboard</h2>
+
+    <!-- AUTHORITY PROFILE -->
+    <div class="section">
+        <h3>Authority Profile</h3>
+        <p><b>Name:</b> Amit Patel</p>
+        <p><b>Role:</b> City Administrator</p>
+        <p><b>Jurisdiction:</b> Entire City</p>
+        <button>Update Profile</button>
+    </div>
+
+    <!-- LIVE DEPARTMENT STATUS -->
+    <div class="section">
+        <h3>Live Department Status</h3>
+
+        <table>
+            <tr>
+                <th>Department</th>
+                <th>Current Status</th>
+                <th>Active Tasks</th>
+                <th>Critical Alerts</th>
+            </tr>
+
+            <tr>
+                <td>Emergency</td>
+                <td class="high">High Load</td>
+                <td>14</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td>Utility</td>
+                <td class="medium">Moderate</td>
+                <td>21</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td>Citizen Complaints</td>
+                <td class="low">Normal</td>
+                <td>32</td>
+                <td>0</td>
+            </tr>
+
+            <tr>
+                <td>Workers / Field Teams</td>
+                <td class="medium">Active</td>
+                <td>48</td>
+                <td>2</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- SYSTEM RECORDS OVERVIEW -->
+    <div class="section">
+        <h3>System Records Overview</h3>
+
+        <table>
+            <tr>
+                <th>Record Type</th>
+                <th>Total Count</th>
+                <th>Last Updated</th>
+            </tr>
+
+            <tr>
+                <td>Total Registered Citizens</td>
+                <td>12,458</td>
+                <td>Today</td>
+            </tr>
+
+            <tr>
+                <td>Total Complaints</td>
+                <td>8,902</td>
+                <td>Today</td>
+            </tr>
+
+            <tr>
+                <td>Active Emergencies</td>
+                <td>7</td>
+                <td>Now</td>
+            </tr>
+
+            <tr>
+                <td>Active Utility Tasks</td>
+                <td>19</td>
+                <td>Now</td>
+            </tr>
+
+            <tr>
+                <td>Available Workers</td>
+                <td>61</td>
+                <td>Now</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- ALERT MANAGEMENT -->
+    <div class="section">
+        <h3>Alert Management</h3>
+
+        <h4>Active Alerts</h4>
+        <table>
+            <tr>
+                <th>Alert ID</th>
+                <th>Message</th>
+                <th>Department</th>
+                <th>Priority</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>ALT-1021</td>
+                <td>Heavy rainfall expected in Sector 5</td>
+                <td>Emergency</td>
+                <td class="high">High</td>
+                <td>Active</td>
+            </tr>
+
+            <tr>
+                <td>ALT-1014</td>
+                <td>Power shutdown scheduled</td>
+                <td>Utility</td>
+                <td class="medium">Medium</td>
+                <td>Active</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- CREATE NEW ALERT -->
+    <div class="section">
+        <h3>Create New Alert</h3>
+
+        <label>Alert Title</label>
+        <input type="text" placeholder="Enter alert title">
+
+        <label>Target Department</label>
+        <select>
+            <option>All Departments</option>
+            <option>Emergency</option>
+            <option>Utility</option>
+            <option>Workers</option>
+            <option>Citizens</option>
+        </select>
+
+        <label>Priority Level</label>
+        <select>
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+        </select>
+
+        <label>Alert Message</label>
+        <textarea placeholder="Describe the alert..."></textarea>
+
+        <button>Create Alert</button>
+    </div>
+
+    <!-- REPORT GENERATION -->
+    <div class="section">
+        <h3>Generate Reports</h3>
+
+        <label>Select Report Type</label>
+        <select>
+            <option>Daily System Report</option>
+            <option>Emergency Response Report</option>
+            <option>Utility Performance Report</option>
+            <option>Worker Efficiency Report</option>
+            <option>Citizen Complaint Analysis</option>
+        </select>
+
+        <label>Date Range</label>
+        <input type="date">
+        <input type="date">
+
+        <button>Generate Report</button>
+        <button>Download PDF</button>
+    </div>
+
+</div>
+
+</body>
+</html>
