@@ -13,34 +13,47 @@ body {
 }
 
 /* ================= NAVBAR ================= */
+/* ================= LEFT SIDEBAR NAVBAR ================= */
 .navbar {
-    background: #1f3c88;
-    color: white;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    position: fixed;      /* 🔹 makes navbar static */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 240px;
+    height: 100vh;
+
+    background: #1f3c88;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 20px 15px;
     z-index: 1000;
 }
 
-
 .navbar h3 {
-    font-size: 20px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-align: left;
 }
 
-/* Navbar Links */
+/* NAV LINKS STACKED VERTICALLY */
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .nav-links a {
     color: white;
     text-decoration: none;
     background: #2c5aa0;
-    padding: 8px 12px;
+
+    padding: 10px 14px;
     border-radius: 6px;
-    margin-left: 8px;
+    margin-bottom: 10px;
+
     font-size: 14px;
     transition: 0.3s;
 }
@@ -49,19 +62,24 @@ body {
     background: #142a5e;
 }
 
-/* Logout button */
+/* LOGOUT BUTTON AT BOTTOM */
 .nav-links .logout {
     background: #d9534f;
+    margin-top: auto;
 }
 
 .nav-links .logout:hover {
     background: #b52b27;
 }
 
+
 /* ================= MAIN CONTAINER ================= */
 .container {
     max-width: 1050px;
-    margin: 110px auto 30px auto;  /* 🔹 top space for navbar */
+
+    margin: 30px auto;
+    margin-left: 270px;   /* 🔹 space for sidebar */
+
     background: white;
     padding: 30px;
     border-radius: 14px;
