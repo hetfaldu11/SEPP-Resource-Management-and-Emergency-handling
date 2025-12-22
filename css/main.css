@@ -1,3 +1,4 @@
+/* ================= RESET ================= */
 * {
     margin: 0;
     padding: 0;
@@ -5,11 +6,13 @@
     font-family: "Segoe UI", sans-serif;
 }
 
+/* ================= BODY ================= */
 body {
     background: linear-gradient(120deg, #e0eafc, #cfdef3);
+    min-height: 100vh;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 .navbar {
     background: #1f3c88;
     color: white;
@@ -17,80 +20,132 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: fixed;      /* 🔹 makes navbar static */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-.navbar a {
+
+.navbar h3 {
+    font-size: 20px;
+}
+
+/* Navbar Links */
+.nav-links a {
     color: white;
     text-decoration: none;
-    background: #d9534f;
-    padding: 8px 14px;
-    border-radius: 5px;
+    background: #2c5aa0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-left: 8px;
+    font-size: 14px;
+    transition: 0.3s;
 }
 
-/* CONTAINER */
+.nav-links a:hover {
+    background: #142a5e;
+}
+
+/* Logout button */
+.nav-links .logout {
+    background: #d9534f;
+}
+
+.nav-links .logout:hover {
+    background: #b52b27;
+}
+
+/* ================= MAIN CONTAINER ================= */
 .container {
-    max-width: 1000px;
-    margin: 30px auto;
+    max-width: 1050px;
+    margin: 110px auto 30px auto;  /* 🔹 top space for navbar */
     background: white;
     padding: 30px;
-    border-radius: 12px;
+    border-radius: 14px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
-/* HEADINGS */
+/* ================= HEADINGS ================= */
 h2 {
     text-align: center;
     margin-bottom: 25px;
     color: #1f3c88;
 }
 
-/* SECTIONS */
+h3 {
+    margin-bottom: 10px;
+    color: #1f3c88;
+}
+
+/* ================= SECTIONS ================= */
 .section {
     margin-top: 25px;
     padding: 20px;
     background: #f7f9fc;
-    border-left: 6px solid #1f3c88;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
-/* INPUTS */
-input, select, textarea {
+.section p {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+/* ================= FORMS ================= */
+label {
+    display: block;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+input,
+select,
+textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 8px;
+    margin-top: 6px;
     margin-bottom: 12px;
     border-radius: 6px;
     border: 1px solid #ccc;
+    font-size: 14px;
 }
 
 textarea {
-    height: 80px;
+    height: 90px;
+    resize: none;
 }
 
-/* BUTTONS */
+/* ================= BUTTONS ================= */
 button {
-    padding: 10px 16px;
+    padding: 10px 18px;
     background: #1f3c88;
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    margin-right: 8px;
+    margin-top: 5px;
+    transition: 0.3s;
 }
 
 button:hover {
     background: #142a5e;
 }
 
-/* TABLE */
+/* ================= TABLES ================= */
 table {
     width: 100%;
-    margin-top: 12px;
+    margin-top: 15px;
     border-collapse: collapse;
 }
 
 th, td {
-    padding: 10px;
+    padding: 12px;
     border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
 }
 
 th {
@@ -98,17 +153,60 @@ th {
     color: white;
 }
 
-/* PRIORITY */
-.high { color: red; font-weight: bold; }
-.medium { color: orange; font-weight: bold; }
-.low { color: green; font-weight: bold; }
+/* ================= PRIORITY COLORS ================= */
+.high {
+    color: red;
+    font-weight: bold;
+}
 
-/* LOGIN */
+.medium {
+    color: orange;
+    font-weight: bold;
+}
+
+.low {
+    color: green;
+    font-weight: bold;
+}
+
+/* ================= STATUS TEXT ================= */
+.status-active {
+    color: green;
+    font-weight: bold;
+}
+
+.status-inactive {
+    color: red;
+    font-weight: bold;
+}
+
+/* ================= LOGIN PAGE ================= */
 .login-box {
     width: 380px;
     margin: 90px auto;
     background: white;
     padding: 30px;
-    border-radius: 12px;
+    border-radius: 14px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+.login-box button {
+    width: 100%;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .nav-links a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .container {
+        margin: 15px;
+        padding: 20px;
+    }
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pending Tasks</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h3>Utility Management</h3>
+    <div class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="profile.html">Profile</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="workers.html">Workers</a>
+        <a href="utilities.html">Utilities</a>
+        <a href="complaints.html">Complaints</a>
+        <a class="logout" href="../index.html">Logout</a>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Pending Tasks (Priority Wise)</h2>
+
+    <div class="section">
+        <p>Below is the list of all unresolved utility issues reported by citizens.</p>
+    </div>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Department</th>
+            <th>Description</th>
+            <th>Priority</th>
+            <th>Actions</th>
+        </tr>
+
+        <tr>
+            <td>UTL-3021</td>
+            <td>Electricity</td>
+            <td>Main transformer overloaded</td>
+            <td class="high">High</td>
+            <td>
+                <button>Assign Workers</button>
+                <button>Update Status</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>UTL-2978</td>
+            <td>Water Supply</td>
+            <td>Pipeline leakage in Sector 7</td>
+            <td class="medium">Medium</td>
+            <td>
+                <button>Assign Workers</button>
+                <button>Update Status</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>UTL-2912</td>
+            <td>Street Lights</td>
+            <td>15 lights not working in Sector 5</td>
+            <td class="low">Low</td>
+            <td>
+                <button>Assign Workers</button>
+                <button>Update Status</button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
